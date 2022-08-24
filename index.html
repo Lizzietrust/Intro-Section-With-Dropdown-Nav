@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro Section With Dropdown Nav</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="nav">
+            <img src="./intro-section-with-dropdown-navigation-main/images/logo.svg" alt="" class="nav-logo">
+            <div class="menu">
+                <ul class="nav-info">
+                    <li class="dropdown"> 
+                        <ul class="default">
+                            <li>Features</li>
+                        </ul>
+                        <ul class="select ">
+                            <li><a href="#">
+                                <div class="option todo">
+                                    <div class="icon">
+                                        <img src="./intro-section-with-dropdown-navigation-main/images/icon-todo.svg" alt="">
+                                        <p>Todo List</p>
+                                    </div>
+                                </div></a>
+                            </li>
+                            <li><a href="#">
+                                <div class="option calendar">
+                                    <div class="icon">
+                                        <img src="./intro-section-with-dropdown-navigation-main/images/icon-calendar.svg" alt="">
+                                        <p>Calendar</p>
+                                    </div>
+                                </div></a>
+                            </li>
+                            <li><a href="#">
+                                <div class="option reminders">
+                                    <div class="icon">
+                                        <img src="./intro-section-with-dropdown-navigation-main/images/icon-reminders.svg" alt="">
+                                        <p>Reminders</p>
+                                    </div>
+                                </div></a>
+                            </li>
+                            <li><a href="#">
+                                <div class="option planning">
+                                    <div class="icon">
+                                        <img src="./intro-section-with-dropdown-navigation-main/images/icon-planning.svg" alt="">
+                                        <p>Planning</p>
+                                    </div>
+                                </div></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown secon">
+                        <ul class="default">
+                            <li>Company</li>
+                        </ul>
+                        <ul class="select sec">
+                            <li><a href="#">
+                                <div class="option history">
+                                    <p>History</p>
+                                </div></a>
+                            </li>
+                            <li><a href="#">
+                                <div class="option team">
+                                    <p>Our Team</p>
+                                </div></a>
+                            </li>
+                            <li><a href="#">
+                                <div class="option blog">
+                                    <p>Blog</p>
+                                </div></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="third"><a href="#"> Careers</a></li>
+                    <li><a href="#"> About</a></li>
+                </ul>
+                <div class="nav-links">
+                    <input type="button" value="Login">
+                    <button>Register</button>
+                </div>
+            </div>
+            <div class="hamburger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="main">
+                <h1><span>Make</span>  remote work</h1>
+                <p>Get your team in sync, no matter your location. Streamline processes, 
+                create team rituals, and watch productivity soar.</p>
+                <button>Learn more</button>
+                <div class="icons">
+                    <img src="./intro-section-with-dropdown-navigation-main/images/client-databiz.svg" alt="">
+                    <img src="./intro-section-with-dropdown-navigation-main/images/client-audiophile.svg" alt="">
+                    <img src="./intro-section-with-dropdown-navigation-main/images/client-meet.svg" alt="">
+                    <img src="./intro-section-with-dropdown-navigation-main/images/client-maker.svg" alt="">
+                </div>
+            </div>
+            <img src="./intro-section-with-dropdown-navigation-main/images/image-hero-desktop.png" class="hero" alt="">
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".default").click(function(){
+                $(this).parent().toggleClass("active");
+            })
+        });
+    </script>
+    <script src="index.js"></script>
+</body>
+</html>
